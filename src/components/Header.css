@@ -153,6 +153,9 @@ transition: 0.6s;
 }
 
 @media(max-width :300px ) {
+    .header .theLeft .search input {
+        width: 170px;
+    }
     .header .icons {
         gap: 5px;
 }}

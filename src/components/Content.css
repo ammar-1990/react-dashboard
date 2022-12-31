@@ -93,6 +93,23 @@
 .content .row.header:nth-child(2){
     flex-direction: row;
 }
+@media (max-width:400px) {
+    
+
+    .content .row.header:nth-child(2) {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .content .row.header:nth-child(2) .card {
+        width: 40%;
+    }
+    .content .row.header:nth-child(2) .cardDivider{
+        display: none;
+    }
+
+
+}
 
 .cardDivider {
     width: 1px;
