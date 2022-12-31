@@ -1,0 +1,178 @@
+.navigation {
+   width: 20%;
+
+    background: var( --linear);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+ 
+}
+
+@media (max-width:1315px) {
+    .navigation {
+position: fixed;
+top:50px;
+width: 30%;
+left: -100%;
+z-index: 4;
+height: 100vh;
+border-top-right-radius: 15px;
+    }
+    .navigation.open {
+        left: 0;
+    }
+}
+
+@media (max-width:833px) {
+    .navigation {
+        width: 50%;
+        
+    }
+}
+
+@media (max-width:550px ) {
+    .navigation {
+        top: 100px;
+        width: 80%;
+        
+    }
+}
+
+.navigation.close {
+    width: 95px;
+    
+}
+
+.navigation .waves {
+    position: absolute;
+    left: 0;
+    top: 0;
+ 
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.navigation .divide{
+    height: 1px;
+    width: 80%;
+    margin-inline: auto;
+    background-color: rgba(128, 128, 128, 0.516);
+}
+.navigation header {
+    padding: 25px 10px;
+    background-color: rgba(211, 211, 211, 0.11);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    transition: 0.7s;
+   
+
+}
+.navigation .navWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+@media (max-width : 550px)  {
+    .navigation .navWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-height : 600px) {
+    .navigation .navWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        width: 40%;
+       
+    }
+}
+
+.navigation.close header {
+    padding: 0;
+    background-color: transparent !important;
+}
+
+.navigation.close header  img {
+    width: 50px;
+    height: 50px;
+}
+
+.navigation .left-icon {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 25px;
+
+}
+
+.navigation.close .left-icon {
+    top: -7px;
+    right: -3px;
+}
+
+.navigation.close .left-icon {
+    transform: rotate(-180deg);
+}
+
+@media (max-width:1315px) {
+    .navigation .left-icon{
+        display: none;
+    }
+}
+
+
+.navigation header::after {
+position: absolute;
+content: '';
+bottom: 30%;
+left: 10%;
+height: 1px;
+width: 80%;
+background-color: white;
+z-index: 3;
+transition: 0.3s;
+}
+
+.navigation.close header::after {
+ opacity: 0;
+}
+
+.navigation header img {
+  width:75px;
+  height: 75px;
+   object-fit: cover;
+   border-radius: 50%;
+   transition: 0.5s;
+}
+
+.navigation header span {
+   font-weight: bold;
+   font-size: 1.1rem;
+   transition: 0.3s;
+}
+
+.navigation.close header span {
+    opacity: 0;
+}
+
+.navigation.close h3 {
+    opacity: 0;
+}

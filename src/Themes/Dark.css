@@ -1,0 +1,35 @@
+.navigation.dark header {
+    background-color: rgba(0, 0, 0, 0.525);
+}
+
+.main.dark {
+    background-color: black;
+    color: gray;
+}
+
+.main.dark .header .search input {
+    border-color: gray;
+    color: cadetblue;
+}
+
+.main.dark .header .theLeft .settings {
+    border-color: gray;
+}
+
+.main.dark .header .theLeft .settings div {
+    background-color: gray;
+}
+
+.main.dark .content {
+    color: gray;
+}
+.main.dark .content .row.middle::after {
+    background-color: black ;
+}
+.main.dark .content .row.middle .analitycs {
+    color :white;
+}
+
+.main.dark .content .row.cRight .section .circularProgress svg .circleGray{
+    stroke: rgba(255, 255, 255, 0.359);
+}

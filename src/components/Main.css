@@ -1,0 +1,10 @@
+.main {
+ flex: 1;
+    min-height: calc(100vh + 375px);
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s;
+  
+ 
+    
+}

@@ -1,0 +1,44 @@
+.circularProgress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circularProgress .info {
+    position: absolute;
+   
+}
+.circularProgress .info .details {
+    display: flex;
+}
+
+.circularProgress svg {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+ 
+}
+
+.circularProgress svg .circleGray {
+    stroke-width: 4;
+    fill: transparent;
+    stroke: rgba(128, 128, 128, 0.553);
+    transition: 0.7s;
+}
+
+.circularProgress svg .circle{
+    stroke: #810551;
+    fill: transparent;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray:315;
+    stroke-dashoffset: 315;
+    animation: move 1s linear forwards 1s;
+}
+
+@keyframes move {
+    to {
+        stroke-dashoffset: var(--theValue);
+    }
+}
