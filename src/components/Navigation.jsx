@@ -38,14 +38,14 @@ const Navigation = ({open}) => {
         <Nav Icon={VscGraphLine} title='Analytics' />
         <Nav Icon={FiMessageSquare} title='Messages' />
         <Nav Icon={AiOutlineUsergroupAdd} title='Followers' />
-        <div className="divide"></div>
+       
         <Nav Icon={MdOutlineNotificationsActive} title='Notifications' />
         <Nav Icon={RiAccountCircleLine} title='Following' />
         <Nav Icon={AiOutlineDollarCircle} title='Earnings' />
         <Nav Icon={TbFileUpload} title='posts' />
         <Nav Icon={BiMessageAltAdd} title='Message Requests' />
         <Nav Icon={AiOutlineUserSwitch} title='Change Account' />
-        <div className="divide"></div>
+       
         <Nav Icon={MdSwapHoriz} title={dark?'Switch to Light Mode' :'Switch to Dark Mode'} setDark={setDark} />
         <Nav Icon={BiDotsHorizontalRounded} title='More Details' />
 </div>

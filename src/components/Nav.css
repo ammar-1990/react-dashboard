@@ -6,6 +6,7 @@ transition: 0.3s;
 cursor: pointer;
 padding:10px 30px;
 border-radius: 10px;
+width: 100%;
     
 }
 
@@ -18,10 +19,20 @@ border-radius: 10px;
 @media (max-width:550px ) {
     .nav {
         width: 40%;
-        padding: 5px 10px 20px 5px;
+       padding: 5px;
+       margin: 5px;
     }
 }
-
+@media (max-width:350px )
+{
+    .nav {
+        flex-direction: column;
+        gap: 3px;
+        align-items: center;
+        width: 45%;
+        text-align: center;
+    }
+}
 .nav h3 {
     font-size: 0.9rem;
     font-weight: bold;

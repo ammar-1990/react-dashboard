@@ -2,7 +2,7 @@
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(4,24%);
-    gap: 1%;
+    gap: 10px;
    
     
 }
@@ -91,7 +91,7 @@
 }
 
 .content .row.header:nth-child(2){
-    flex: row;
+    flex-direction: row;
 }
 
 .cardDivider {
@@ -319,7 +319,7 @@ top: 350px;
 .row.cRight .section .summary .summary_title {
 height: 0;
 overflow: hidden;
---height:20px;
+--height:25px;
 animation: appear 0.3s forwards 1s linear;
 translate: 0 30px;
 }
@@ -328,7 +328,7 @@ translate: 0 30px;
     font-size: 0.8rem;
     height: 0;
     overflow: hidden;
-    --height:40px;
+    --height:45px;
     animation: appear 0.6s forwards  1s linear;
     translate: 0 70px;
     
